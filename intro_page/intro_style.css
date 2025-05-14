@@ -1,0 +1,202 @@
+body {
+    background: linear-gradient(0deg, #ffffff, #EFF6FF);
+    background-size: 1920px 2160px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+.logo {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #3B82F6;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #3B82F6;
+    margin-top: -30px;
+    
+}
+
+.logo:hover {
+    text-decoration-skip: underline;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: -35px;
+}
+
+p {
+    font-size: 20px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #3B82F6;
+}
+a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+.popular-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    width: 90%;
+    height: 300px;
+    background-color: #ffffff;
+    border-radius: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: -100px;
+}
+.village-container {
+    width: 30%;
+    height: 150px;
+    background-color: #F9FAFB;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin-top: 70px;
+    position: relative;  /* 기준점 설정 */
+}
+.left_up-coner {
+    position: absolute;
+    top: 330px;
+    left: 180px;
+    font-size: 32px;
+}
+.title {
+    font-size: 28px;
+    color: #000000;
+    font-weight: bold;
+    margin-left: -70%;
+    margin-top: -5%;
+}
+
+.percent {
+    color: #22C55E;
+    position: absolute;
+    margin-top: -5%;
+    margin-left: 70%;
+    font-size: 20px;
+}
+
+.neighbor {
+    position: absolute;
+    color: #4B5563;
+    margin-right: 45%;
+    margin-top: 20%;
+}
+
+.info_detail {
+    position: absolute;
+    color: #4B5563;
+    margin-top: 30%;
+}
+
+.info-detail_num {
+    font-size: 28px;
+    color: #000000;
+    font-weight: bold;
+    margin-top: 12%;
+}
+
+.start-button {
+    background: #3B82F6;
+    margin-top: 50px;
+    border-radius: 9999px;
+    text-align: center;
+    padding: 10px 20px;
+
+    font-size: 20px;
+    font-style: normal;
+    margin-top: 0px;
+    color: #ffffff;
+    border: 0px;
+    width: 15%;
+    height: 62px;
+    
+}
+
+.withyou-info {
+    width: 90%;
+    height: 70%;
+    background-color: #ffffff;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin-top: 70px;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+    margin-left: 1%;
+    margin-right: 1%;
+    position: relative;
+} 
+
+.join {
+    font-size:6px;
+    background-color: #ffffff;
+    position: relative;
+    border-radius: 18px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 20%;
+    height: 100px;
+    margin-top: -75px;
+}
+
+.now {
+    margin-top: 17px;
+    margin-left: 25%;
+    font-size: 18px;
+    padding: auto;
+    position: absolute;
+}
+
+.join_now {
+    position : absolute;
+    margin-top: 50px;
+    margin-left: 25%;
+    font-size: 18px;
+    color: #4B5563;
+}
+
+.invisible_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+    width: 92%;
+    height: 300px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.invisible_container1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    width: 20%;
+    height: 10px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.start-button:hover {
+  background-color: #3498db; /* 배경색 변경 */
+  color: white;              /* 글자색 변경 */
+}

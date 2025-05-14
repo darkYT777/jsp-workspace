@@ -1,103 +1,70 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <title>With You Intro Page</title>
-        <style>
-            body {
-                background: linear-gradient(0deg, #ffffff, #EFF6FF);
-                background-size: 1920px 1080px;
-                font-family: Arial, sans-serif;
-                text-align: center;
-                padding: 50px;
-            }
-            h1 {
-                font-size: 50px;
-                margin-bottom: 20px;
-                color: #3B82F6;
-            }
-            h2 {
-                font-size: 40px;
-                margin-bottom: -40px;
-            }
-            p {
-                font-size: 20px;
-                margin-top: 60px;
-                margin-bottom: 30px;
-            }
-            a {
-                font-size: 20px;
-                text-decoration: none;
-                color: #3B82F6;
-            }
-            a:hover {
-                text-decoration: underline;
-                color: #ffffff;
-            }
-            .popular-container {
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                margin-top: 50px;
-                width: 90%;
-                height: 300px;
-                background-color: #ffffff;
-                border-radius: 10px;
-                margin-left: auto;
-                margin-right: auto;
-            }
-            .village-container {
-                width: 30%;
-                height: 150px;
-                background-color: #F9FAFB;
-                border-radius: 20px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 24px;
-                margin-top: 70px;
-            }
-            .left_up-coner {
-                position: absolute;
-                top: 380px;
-                left: 180px;
-                font-size: 32px;
-            }
-            .title {
-                font-size: 24px;
-                color: #000000;
-                font-weight: bold;
-                margin-left: -60%;
-                margin-top: -5%;
-            }
-            .button-container {
-                margin-top: 50px;
-                display: flex;
-                justify-content: center;
-                border-radius: 9999px;
-                background-color: #3B82F6;
-            }
-
-        </style>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" href="intro_style.css">
     </head>
     <body>
-        <h1>With You</h1>
+        <h1 class="logo"><a href="intro.html" class="logo">With You</a></h1>
         <h2>우리 동네의 새로운 이야기가</h2>
         <h2>시작됩니다</h2>
         <p>이웃과 함께 만들어가는 따뜻한 커뮤니티</p>
+
+        <script>
+            
+            let observer = new InntersectionObserver(()=>{})
+
+            let div = document.querySelector('.popular-container')
+            observer.observe(div[0])
+
+        </script>
         <div class="popular-container">
             <h4 class ="left_up-coner">실시간 인기 동네</h4>
             <div class="village-container">
-                <h4 class="title">인기 동네 1위</h4>
+                <h4 class="title">안서1동</h4>
+                <p class="percent">+12%</p>
+                <p class="neighbor">2400명의 이웃이 활동중</p>
             </div>
             <div class="village-container">
-                <h4 class="title">인기 동네 2위</h4>
+                <h4 class="title">백석2동</h4>
+                <p class="percent">+8%</p>
+                <p class="neighbor">1800명의 이웃이 활동중</p>
             </div>
             <div class="village-container">
-                <h4 class="title">인기 동네 3위</h4>
+                <h4 class="title">성정1동</h4>
+                <p class="percent">+10%</p>
+                <p class="neighbor">2100명의 이웃이 활동중</p>
             </div>
         </div>
-        <div class = "button-container">
-            <a href="main.html">With You 시작하기</a>
+
+        <div class="invisible_container">
+            <div class="withyou-info">
+                <h4 class="info-detail_num">32,000+</h4>
+                <p class="info_detail">활동 이웃</p>
+            </div>
+            <div class="withyou-info">
+                <h4 class="info-detail_num">1200+</h4>
+                <p class="info_detail">진행중인 모임</p>
+            </div>
+            <div class="withyou-info">
+                <h4 class="info-detail_num">25개구</h4>
+                <p class="info_detail">참여 지역</p>
+            </div>
         </div>
+
+        <div class="join">
+            <p class="now">방금 전</p>
+            <p class="join_now">새로운 이웃 12명이 가입했어요!</p>
+        </div>
+
+        <button type="button" class="start-button" onClick="location.href='intro.html'">With You 시작하기</button>
+
+        <div class="invisible_container1">
+            <p>이미 계정이 있으신가요?</p>
+            <p class="login_button"><a href="intro.html">로그인하기</a></p>
+        </div>
+        
     </body>
 </html>
