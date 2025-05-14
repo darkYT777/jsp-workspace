@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>With You Intro Page</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <style>
+            body {
+                background: linear-gradient(0deg, #ffffff, #EFF6FF);
+                background-size: 1920px 1080px;
+                font-family: Arial, sans-serif;
+                text-align: center;
+                padding: 50px;
+            }
+            h1 {
+                font-size: 50px;
+                margin-bottom: 20px;
+                color: #3B82F6;
+            }
+            h2 {
+                font-size: 40px;
+                margin-bottom: -40px;
+            }
+            p {
+                font-size: 20px;
+                margin-top: 60px;
+                margin-bottom: 30px;
+            }
+            a {
+                font-size: 20px;
+                text-decoration: none;
+                color: #3B82F6;
+            }
+            a:hover {
+                text-decoration: underline;
+                color: #ffffff;
+            }
+            .popular-container {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-top: 50px;
+                width: 90%;
+                height: 300px;
+                background-color: #ffffff;
+                border-radius: 10px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .village-container {
+                width: 30%;
+                height: 150px;
+                background-color: #F9FAFB;
+                border-radius: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 24px;
+                margin-top: 70px;
+            }
+            .left_up-coner {
+                position: absolute;
+                top: 380px;
+                left: 180px;
+                font-size: 32px;
+            }
+            .title {
+                font-size: 24px;
+                color: #000000;
+                font-weight: bold;
+                margin-left: -60%;
+                margin-top: -5%;
+            }
+
+            .start-button {
+                background: #3B82F6;
+                margin-top: 50px;
+                border-radius: 9999px;
+                text-align: center;
+                padding: 10px 20px;
+                left: 20px;
+                right: 20px;
+                font-size: 20px;
+            }
+
+            .withyou-info {
+                width: 30%;
+                height: 150px;
+                background-color: #F9FAFB;
+                border-radius: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 24px;
+                margin-top: 70px;
+            } 
+
+        </style>
+    </head>
+    <body>
+        <h1>With You</h1>
+        <h2>우리 동네의 새로운 이야기가</h2>
+        <h2>시작됩니다</h2>
+        <p>이웃과 함께 만들어가는 따뜻한 커뮤니티</p>
+
+        <script>
+            
+            let observer = new InntersectionObserver(()=>{})
+
+            let div = document.querySelector('.popular-container')
+            observer.observe(div[0])
+
+        </script>
+        <div class="popular-container">
+            <h4 class ="left_up-coner">실시간 인기 동네</h4>
+            <div class="village-container">
+                <h4 class="title">인기 동네 1위</h4>
+            </div>
+            <div class="village-container">
+                <h4 class="title">인기 동네 2위</h4>
+            </div>
+            <div class="village-container">
+                <h4 class="title">인기 동네 3위</h4>
+            </div>
+        </div>
+
+        <div class="withyou-info">
+
+        </div>
+        <div class="withyou-info">
+            
+        </div>
+        <div class="withyou-info">
+            
+        </div>
+        <div class="withyou-info">
+            
+        </div>
+
+        <button class="start-button">With You 시작하기</button>
+
+        
+        
+    </body>
+</html>
